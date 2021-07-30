@@ -12,7 +12,6 @@ import { MessageService } from '../message.service';
 
 export class HeroesComponent implements OnInit {
   
-  selectedHero?: Hero;  //Set hero type.
 
   heroes: Hero[] = [];
 
@@ -23,12 +22,6 @@ export class HeroesComponent implements OnInit {
   ngOnInit(): void {
     this.getHeroes();
   }
-
-  onSelect(hero: Hero): void {
-      this.selectedHero = hero;
-      this.messageService.add('HeroesComponent: Selected hero id=${hero.id}');
-  }
-
 
   hero: Hero = {    // hero property is Type Hero.
     id: 1,

@@ -1,3 +1,8 @@
 <h1>{{title}}</h1>
-<app-heroes></app-heroes> <!-- App heroes is the element selctor for HeroesComponent-->
-<app-messages></app-messages> <!-- Display messages -->
+<nav>
+  <a routerLink="/dashboard">Dashboard </a>
+  
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
